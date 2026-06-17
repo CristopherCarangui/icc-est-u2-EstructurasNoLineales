@@ -1,5 +1,17 @@
+import java.util.LinkedList;
+import structures.trees.IntTree;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        runIntree();
+    }
+
+    private static void runIntree() {
+        IntTree arbolNumero= new IntTree();
+        
+       
+        
+
+
     }
 }

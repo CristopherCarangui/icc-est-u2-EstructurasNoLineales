@@ -1,18 +1,11 @@
-## Getting Started
+# Práctica: Ejercicios de logica con estructuras lineales: pilas y colas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Datos del Grupo
+- **Nombres:**  Cristopher Carangui.
+- **Curso:** Estructura de Datos
+- **Fecha:** 22/06/2026
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 1. Proyecto
+La practica realizada en clases nos permitio poner a prueba lo aprendido en clases sobre pilas y colas, trabajando en equipo, resolviendo los problemas con ideas para tener exito en la ejecucion de los ejercicios.

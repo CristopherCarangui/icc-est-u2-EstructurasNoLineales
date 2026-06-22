@@ -1,4 +1,7 @@
+import structures.node.Node;
 import structures.trees.BinaryTree;
+import structures.trees.Ejercicio1;
+import structures.trees.Ejercicio2;
 import structures.trees.IntTree;
 import models.*;
 
@@ -6,6 +9,22 @@ public class App {
     public static void main(String[] args) throws Exception {
         runIntree();
         runBinaryTree();
+        runEjercicios();
+    }
+
+    private static void runEjercicios() {
+        Ejercicio1 ejercicio1 = new Ejercicio1();
+        int [] numeros = {5,3,7,2,4,6,8};
+        ejercicio1.insert(numeros);
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        int [] numeros2 = new int[]{4,2,1,3,7,6,9};
+        BinaryTree<Integer> num2 = new BinaryTree<>();
+        for(int numero: numeros2){
+            num2.add(numero);
+        }
+        Node<Integer> root = num2.getRoot();
+        ejercicio2.inverTree(root, 0);
+
     }
 
     private static void runBinaryTree() {

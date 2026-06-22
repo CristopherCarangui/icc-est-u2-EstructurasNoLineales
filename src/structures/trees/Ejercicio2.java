@@ -1,0 +1,51 @@
+package structures.trees;
+
+import structures.node.Node;
+
+public class Ejercicio2 {
+    
+
+    public void inverTree(Node<Integer> actual,int nivel){
+        imprimirOriginal(actual, nivel);
+        imprimirInvertido(actual, nivel);
+            
+    }
+    public void impirmirNumerosA(Node<Integer> root){
+        System.out.println("Imprimir el arbol original");
+        imprimirOriginal(root, 0);;
+    }
+    public void imprimirOriginal(Node<Integer> actual,int nivel){
+        if(actual == null) return;
+        imprimirOriginal(actual.getRight(), nivel+1);
+        for(int i=0; i< nivel;i++){
+            System.out.print("\t");
+        }
+        imprimirOriginal(actual.getLeft(), nivel+1);
+    }
+
+    public void impirmirNumerosB(Node<Integer> root){
+        System.out.println("Imprimir el arbol Invertido");
+        imprimirInvertido(root, 0);;
+    }
+    public void imprimirInvertido(Node<Integer> actual,int nivel){
+         if(actual == null) return;
+        inverTree(actual.getLeft(), nivel+1);
+        
+        for(int i=0; i< nivel;i++){
+            System.out.print("\t");
+        }
+        System.out.println(actual.getValue());
+        inverTree(actual.getRight(), nivel+1);
+        
+    }
+    public Node<Integer> invertirRecursivo(Node<Integer> actual){
+        if(actual == null) return null;
+        Node<Integer> aux = actual.getLeft();
+        System.out.println("Actual" + actual);
+        actual.setLeft(actual.getRight());
+        actual.setRight(aux);
+        invertirRecursivo(actual.getLeft());
+        invertirRecursivo(actual.getRight());
+        return actual;
+    }
+}

@@ -17,13 +17,9 @@ public class App {
         int [] numeros = {5,3,7,2,4,6,8};
         ejercicio1.insert(numeros);
         Ejercicio2 ejercicio2 = new Ejercicio2();
-        int [] numeros2 = new int[]{4,2,1,3,7,6,9};
-        BinaryTree<Integer> num2 = new BinaryTree<>();
-        for(int numero: numeros2){
-            num2.add(numero);
-        }
-        Node<Integer> root = num2.getRoot();
-        ejercicio2.inverTree(root, 0);
+        int [] numeros2 = {4,2,1,3,7,6,9};
+        ejercicio2.insertar2(numeros2);
+        
 
     }
 

@@ -4,14 +4,20 @@ import structures.node.Node;
 
 public class Ejercicio2 {
     
-
-    public void inverTree(Node<Integer> actual,int nivel){
-        imprimirOriginal(actual, nivel);
-        imprimirInvertido(actual, nivel);
-            
+    public void insertar2(int[] numeros2){
+         BinaryTree<Integer> num2 = new BinaryTree<>();
+        for(int numero: numeros2){
+            num2.add(numero);
+        }
+        Node<Integer> root = num2.getRoot();
+        impirmirNumerosA(root);
+        System.out.println("Arbol Invertido");
+        invertirRecursivo(root);
+        
     }
+    
     public void impirmirNumerosA(Node<Integer> root){
-        System.out.println("Imprimir el arbol original");
+        System.out.println("\n Imprimir el arbol original");
         imprimirOriginal(root, 0);;
     }
     public void imprimirOriginal(Node<Integer> actual,int nivel){
@@ -23,21 +29,7 @@ public class Ejercicio2 {
         imprimirOriginal(actual.getLeft(), nivel+1);
     }
 
-    public void impirmirNumerosB(Node<Integer> root){
-        System.out.println("Imprimir el arbol Invertido");
-        imprimirInvertido(root, 0);;
-    }
-    public void imprimirInvertido(Node<Integer> actual,int nivel){
-         if(actual == null) return;
-        inverTree(actual.getLeft(), nivel+1);
-        
-        for(int i=0; i< nivel;i++){
-            System.out.print("\t");
-        }
-        System.out.println(actual.getValue());
-        inverTree(actual.getRight(), nivel+1);
-        
-    }
+   
     public Node<Integer> invertirRecursivo(Node<Integer> actual){
         if(actual == null) return null;
         Node<Integer> aux = actual.getLeft();

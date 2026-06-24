@@ -34,8 +34,14 @@ public class App {
         System.out.println("===Ejercicio3===");
         List<List<Node<Integer>>>  num3= ejercicio3.listLevels(arbolBej3.getRoot());
         Ejercicio4 ejercicio4 = new Ejercicio4();
+        int [] numeros4 = {4,2,1,3,7,8};
         System.out.println("===Ejercicio4===");
-        System.out.println(ejercicio4.maxDepth(arbolBej3.getRoot()));
+        BinaryTree<Integer> arbolBej4 = new BinaryTree<>();
+        for(int numerosad1 : numeros4){
+            arbolBej4.add(numerosad1);
+        }
+
+        System.out.println(ejercicio4.maxDepth(arbolBej4.getRoot()));
         
 
     }

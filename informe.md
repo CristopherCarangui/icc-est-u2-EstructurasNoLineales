@@ -9,21 +9,21 @@
 ---
 
 ## 1. Descripcion
-Esta practica consta de 4 ejercicios donde cada uno subia la complejidad y nos ayudaba mas en el tema aprendidio en clases sobre arboles, descubriendo diferentes formas de imprimir los arboles o utilizar metodos hechos en clases como BinaryTree, colas o pilas.
+Esta práctica consta de 4 ejercicios, cada uno con mayor complejidad. Nos ayudó a profundizar en el tema de árboles visto en clases, descubriendo diferentes formas de imprimirlos y utilizando métodos como BinaryTree, colas y pilas.
 
 
 ## Ejercicio1
 ## Descripción:
-El ejercicio 1 fue de una lista de entero el cual antes hecho en una hoja se reconoce la raiz o root que empieza en 5 , y se va con condiciones haciendo los hijos en este caso si el numero es menor o mayor al root. El metodo de imprimir utilizamos para organizar el arbol como se habia mencionado de mayor o menor haz obtener todo el arbol con el root y nivel de cada uno.
+En este ejercicio trabajamos con una lista de enteros. Se reconoce la raíz (root), que empieza en 5, y a partir de ella se van insertando los hijos según la condición: si el número es menor va a la izquierda, si es mayor va a la derecha. El método de impresión organiza el árbol mostrando la raíz y el nivel de cada nodo, siguiendo el orden de mayor o menor.
 ## Ejercicio2
 ## Descripción:
-El ejercicio 2 es nos pide invertir un arbol como en el anterior ejercicio se tuiliza una lista de enteros como primero paso se ordena el arbol para obtener como va el arbol y con eso se utiliza un metodo inverir el cual la rama que esta ala izquiera pasa a ser de la derecha eso se obtiene setiando los valores de la izquiera ala derecha
+Aquí se pide invertir un árbol. Igual que en el ejercicio anterior, se parte de una lista de enteros y se construye el árbol ordenado. Luego, mediante un método de inversión, las ramas que estaban a la izquierda pasan a la derecha y viceversa. Esto se logra reasignando los valores de cada nodo.
 ## Ejercicio3
 ## Descripción:
-El ejercicio 3 fue un ejercicio complicado ya que se pide una liza enlazada con nodos con cada nivel el cual para mi empiezo el metodo como se pide para lo cual implemento una lista donde va estar mi lista de numeros , a lo siguente utilizo colas para utilizar el metodo de fifo y con un bucle while para añadir la raiz y con otro bucle for ir por el tamaño de la cola.El bulce for me ayuda recorrer toda miu lista y con un nodoactual poder agregar cada una a la izquiera o derecha. Con un metodo imprimir voy imprimiendo la lista de como recorrio cada nodo y nivel de el arbol.
+Este ejercicio fue más complejo: se pide construir una lista enlazada con nodos por nivel. Para resolverlo, primero se implementa una lista con los números, luego se utiliza una cola (FIFO) y un bucle while para añadir la raíz. Después, con un bucle for, se recorre el tamaño de la cola y se van agregando los nodos a la izquierda o derecha según corresponda. Finalmente, con un método de impresión se muestra cómo se recorrió cada nodo y el nivel del árbol.
 ## Ejercicio4
 ## Descripción:
-El ejercicio 4 fue un ejercicio donde se pudo reutilizar codigo hecho en clases ya que se utiliza un binarytree que tiene el metodo de profundidad de un arbol
+En este ejercicio se reutilizó código visto en clases. Se trabajó con la clase BinaryTree, que ya tenía implementado un método para calcular la profundidad de un árbol. Esto permitió aplicar directamente la lógica sin necesidad de rehacer todo el código.
 ## Tabla de evidencias requeridas
 | Ejercicio| Evidencia de Codigo | Evidencia de consola | Observacion|                                                                                                                         |
 | ----------------: | -------------------------: | ---------------------: | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |

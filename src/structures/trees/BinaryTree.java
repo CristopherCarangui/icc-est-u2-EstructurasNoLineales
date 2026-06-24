@@ -79,11 +79,11 @@ public class BinaryTree <T extends Comparable<T>> {
         if(actual== null)
             return;
         inOrderRecursivo(actual.getLeft());
-        System.out.println(actual);
+        System.out.println(actual.getValue());
         inOrderRecursivo(actual.getRight());
     }
 
-    public int alturaTree(){
+    public int getalturaTree(){
         return getalturaTreeRecuraivo(root);
     }
     private int getalturaTreeRecuraivo(Node<T> actual) {

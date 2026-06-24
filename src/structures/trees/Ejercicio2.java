@@ -10,22 +10,21 @@ public class Ejercicio2 {
             num2.add(numero);
         }
         Node<Integer> root = num2.getRoot();
-        impirmirNumerosA(root);
+        System.out.println("Arbol Original");
+        imprimirOriginal(root, 0);
         System.out.println("Arbol Invertido");
-        invertirRecursivo(root);
+        imprimirOriginal(invertirRecursivo(root), 0);
         
     }
     
-    public void impirmirNumerosA(Node<Integer> root){
-        System.out.println("\n Imprimir el arbol original");
-        imprimirOriginal(root, 0);;
-    }
+    
     public void imprimirOriginal(Node<Integer> actual,int nivel){
         if(actual == null) return;
         imprimirOriginal(actual.getRight(), nivel+1);
         for(int i=0; i< nivel;i++){
             System.out.print("\t");
         }
+        System.out.println(actual.getValue());
         imprimirOriginal(actual.getLeft(), nivel+1);
     }
 
@@ -33,7 +32,6 @@ public class Ejercicio2 {
     public Node<Integer> invertirRecursivo(Node<Integer> actual){
         if(actual == null) return null;
         Node<Integer> aux = actual.getLeft();
-        System.out.println("Actual" + actual);
         actual.setLeft(actual.getRight());
         actual.setRight(aux);
         invertirRecursivo(actual.getLeft());

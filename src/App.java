@@ -1,9 +1,12 @@
+import java.util.List;
+import models.*;
 import structures.node.Node;
 import structures.trees.BinaryTree;
 import structures.trees.Ejercicio1;
 import structures.trees.Ejercicio2;
+import structures.trees.Ejercicio3;
+import structures.trees.Ejercicio4;
 import structures.trees.IntTree;
-import models.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -15,16 +18,30 @@ public class App {
     private static void runEjercicios() {
         Ejercicio1 ejercicio1 = new Ejercicio1();
         int [] numeros = {5,3,7,2,4,6,8};
+        System.out.println("===Ejercicio1===");
+        
         ejercicio1.insert(numeros);
         Ejercicio2 ejercicio2 = new Ejercicio2();
         int [] numeros2 = {4,2,1,3,7,6,9};
+        System.out.println("===Ejercicio2===");
         ejercicio2.insertar2(numeros2);
+        Ejercicio3 ejercicio3 = new Ejercicio3();
+        int [] numeros3 = {4,2,1,3,7,6,9};
+        BinaryTree<Integer> arbolBej3 = new BinaryTree<>();
+        for(int numerosad : numeros3){
+            arbolBej3.add(numerosad);
+        }
+        System.out.println("===Ejercicio3===");
+        List<List<Node<Integer>>>  num3= ejercicio3.listLevels(arbolBej3.getRoot());
+        Ejercicio4 ejercicio4 = new Ejercicio4();
+        System.out.println("===Ejercicio4===");
+        System.out.println(ejercicio4.maxDepth(arbolBej3.getRoot()));
         
 
     }
 
     private static void runBinaryTree() {
-        BinaryTree<String> arbolStrings = new BinaryTree<>();
+        //BinaryTree<String> arbolStrings = new BinaryTree<>();
         BinaryTree<Persona> arbolPersonas = new BinaryTree<>();
         arbolPersonas.add(new Persona("Pablo", 30));
         arbolPersonas.add(new Persona("Ana", 25));

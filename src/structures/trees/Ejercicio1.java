@@ -1,18 +1,20 @@
 package structures.trees;
 
+import java.util.Arrays;
 import structures.node.Node;
 
 public class Ejercicio1 {
     public void insert(int [] numeros){
         //Crear el arbol de enteros 
+        System.out.println(Arrays.toString(numeros));
+        System.out.println();
         BinaryTree<Integer> num = new BinaryTree<>();
         //Insertar cada numero
         for(int numero : numeros){
             num.add(numero);
         }
-        num.alturaTree();
+        num.getalturaTree();
         //Imprimir el arbol
-        num.inOrder();
         impirmirNumerosA(num.getRoot());
     } 
 
@@ -29,7 +31,7 @@ public class Ejercicio1 {
             System.out.print("\t");
         }
         System.out.println(actual.getValue());
-        printTreeRecursivo(actual.getLeft(), nivel+1);;
+        printTreeRecursivo(actual.getLeft(), nivel+1);
     }
     
 }

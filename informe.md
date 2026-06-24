@@ -27,19 +27,14 @@ El ejercicio 4 fue un ejercicio donde se pudo reutilizar codigo hecho en clases 
 ## Tabla de evidencias requeridas
 | Ejercicio| Evidencia de Codigo | Evidencia de consola | Observacion|                                                                                                                         |
 | ----------------: | -------------------------: | ---------------------: | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-|            Ejercicio1:Insertar en BST|                     ![alt text](image.png)|              ![alt text](image-4.png)| Se obtuvo los resultados requeridos                                                          |
-|            Ejercicio2: Invertir arbol binario|                    ![alt text](image-1.png)|                ![alt text](image-5.png) |Se ordena bien la pila requerida                                        |
-|           Ejercicio3: Listar niveles|                  ![alt text](image-2.png)|                ![alt text](/assets/image-5.png)|Se reconoce un palindromo  |
-Ejercicio4: Profundidad maxima|                  |       ![alt text](image-3.png)                           |
+|            Ejercicio1:Insertar en BST|                     ![alt text](image.png)|              ![alt text](image-4.png)| Se obtiene el resultado requerido                                                          |
+|            Ejercicio2: Invertir arbol binario|                    ![alt text](image-1.png)|                ![alt text](image-5.png) |Se obtiene el arbol original y el arbol invertido                                       |
+|           Ejercicio3: Listar niveles|                  ![alt text](image-2.png)|                ![alt text](image-6.png)|Se imprime exactamente como se pide |
+Ejercicio4: Profundidad maxima |        ![alt text](image-3.png)             |         ![alt text](image-7.png)                      |  Se reconoce la profundiad del arbol|
 
 ## Salida en consola
-![alt text](/assets/image-6.png)
+![alt text](image-8.png)
 
 
-## Conclusiones
-Con todo lo aprendido en clases nuestro grupo, pudimos resolver los ejercicios propuestos con los principios de LIFO y FIFO, podrando cada ejercicio con distintos casos de entradas, garantizando el orden secuencial en cada proceso.
 
-La practica nos ayudo a resolver problemas en equipo, facilitando una compresion en el codigo y un intercambio de iseas de cada uno sobre su logica para resolver los ejercicios , identificando errores o ideas que cada uno puede utilizar en futuras practicas o tareas en clases.
-
-Se pudo observar el uso adecuado de estructuras lineales no solo mejora el orden de la información, sino que optimiza el rendimiento del código al evitar recorridos innecesarios en la memoria.
 

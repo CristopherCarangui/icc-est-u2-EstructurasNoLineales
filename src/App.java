@@ -1,6 +1,8 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import collection.maps.Maps;
 import collection.set.Sets;
 import models.*;
 import structures.node.Node;
@@ -17,11 +19,37 @@ public class App {
         runBinaryTree();
         runEjercicios();
         runSets();
+        runMap();
+        runPersonaController();
+    }
+
+    private static void runPersonaController() {
+        List<Persona> persona = new ArrayList<>();
+        persona.add(new Persona("Juan", 20));
+        persona.add(new Persona("Pedro", 70));
+        persona.add(new Persona("Esteban", 14));
+        persona.add(new Persona("Juan", 50));
+        persona.add(new Persona("Adrian", 97));
+        persona.add(new Persona("Luis", 74)); 
+
+    }
+
+    private static void runMap() {
+       Maps map = new Maps();
+       System.out.println("===Mapas===");
+       map.construirHashMap();
+       System.out.println("===LinkedHashMap===");
+       map.construirLinkedHashMap();
+       System.out.println("===TreeHashMap===");
+       map.construirTreeHashMap();
+       System.out.println("===TreeContacto====");
+       
+
     }
 
     private static void runSets() {
         Sets set = new Sets();
-        //implementaciob -> HasSet haskcode
+        //implementacion -> HasSet hashcode
         System.out.println("* HashCode: ");
         Set<String> hashSet = set.construirHashSet();
         System.out.println(hashSet);
